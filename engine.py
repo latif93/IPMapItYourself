@@ -1,3 +1,8 @@
+from datetime import datetime
+import json
+import time
+import pandas
+from constants import DF_COLS, EngineType
 from enum import Enum
 from single_radius import SingleRadius
 from geolocator import Geolocator
@@ -5,16 +10,6 @@ from ripe_atlas_client import RIPEAtlasClient
 from pdbutils import PeeringDB
 from evaluator import Evaluator
 from ripe.atlas.cousteau import AtlasResultsRequest
-import json
-import time
-import pandas
-from constants import DF_COLS
-
-
-from constants import EngineType
-
-
-
 
 class Engine():
     """
@@ -32,8 +27,10 @@ class Engine():
         self.results = []
         self.validation = validation
         
-    
     def run(self):
+        start_time = datetime.now()
+        print(f"Processing started at {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+
         for ip in self.ips:
             self.single_radius.measure_addr(ip)
 
@@ -45,29 +42,28 @@ class Engine():
             is_success, results = AtlasResultsRequest(msm_id=m_id).create()
             city, c_code, country, p_lon, p_lat = self.geolocator.get_loc(t_addr, results)
             self.results.append((t_addr, city, c_code, country, p_lon, p_lat))
+
         df = pandas.DataFrame(data=self.results, columns=DF_COLS)
         df.to_csv('results.csv')
         print('Wrote Results To File')
 
-        if self.validation:
-            evaluator = Evaluator(df)
-            evaluator.evaluate()
-            evaluator.plot()
-        
-        print('Done')
-
+        end_time = datetime.now()
+        print(f"Processing finished at {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        duration = end_time - start_time
+        print(f"Total processing time: {duration}")
 
 def main():
     ips = []
-    with open("static/Combined.json","r") as f:
+    with open("final_processed.json", "r") as f:
         for line in f.readlines():
             data = json.loads(line)
-            ipv4 = data['ipv4']
+            ipv4 = data['ip_addr']
             if ipv4 is not None:
-                ips.append(data['ipv4'])
+                ips.append(ipv4)
     print(ips)
-    engine = Engine(EngineType.RIPE, ips, '380531a9-c3fb-424f-8d1b-23cda9b881fd')
-    engine.run()  
+    # engine = Engine(EngineType.RIPE, ips, '380531a9-c3fb-424f-8d1b-23cda9b881fd')
+    engine = Engine(EngineType.RIPE, ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee')
+    engine.run()
 
 if __name__ == "__main__":
     main()

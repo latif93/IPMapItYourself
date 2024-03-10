@@ -313,6 +313,7 @@ class SingleRadius():
 
 
             remaining_space = 500 - len(probe_ids)
+            city_probes = list(city_probes)  # Convert city_probes to a list
             city_probes = random.sample(city_probes, min(len(city_probes), remaining_space))
             self.city_set_sizes.append(len(city_probes))
             self.ixp_city_set_sizes.append(ixp_city_total)
