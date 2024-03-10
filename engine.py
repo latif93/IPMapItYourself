@@ -1,14 +1,15 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 import json
 import time
 import pandas as pd
+from tqdm import tqdm
 from constants import DF_COLS, EngineType
 from single_radius import SingleRadius
 from geolocator import Geolocator
 from ripe_atlas_client import RIPEAtlasClient
 from ripe.atlas.cousteau import AtlasResultsRequest
 from pdbutils import PeeringDB
-from tqdm import tqdm
+# Assuming all necessary imports are done
 
 class Engine:
     def __init__(self, engine_type, ips, api_key=None, validation=False):
@@ -20,36 +21,30 @@ class Engine:
             assert self.api_key is not None, "API key is required for RIPE engine type"
             self.client = RIPEAtlasClient(api_key)
         else:
-            self.client = None  # or other client initialization for different engine types
+            self.client = None  # Placeholder for other client initializations
         self.single_radius = SingleRadius(PeeringDB(), self.client)
         self.geolocator = Geolocator(self.client)
         self.results = []
 
     def run(self):
         start_time = datetime.now()
-        max_duration = timedelta(minutes=30)  # Maximum duration to wait for all measurements
-
         print(f"Processing started at {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
-        
+
         for ip in tqdm(self.ips, desc="Measuring IP addresses"):
             self.single_radius.measure_addr(ip)
-            # Insert a minimal delay if necessary to avoid rate limiting issues
-            time.sleep(0.1)  # Adjust as necessary based on the API's rate limit
+            time.sleep(0.1)  # Adjust based on API limits
 
+        # Wait for all measurements to complete without a maximum duration
         while not self.single_radius.check_for_completion():
-            current_time = datetime.now()
-            if current_time - start_time > max_duration:
-                print("Maximum measurement duration reached, proceeding with available results.")
-                break
             print("Checking if all measurements are complete")
-            time.sleep(60)  # Check every minute
+            time.sleep(60)  # Adjust the sleep time as needed
 
         for t_addr, m_id in tqdm(self.single_radius.measurement_info, desc="Fetching measurement results"):
             is_success, results = AtlasResultsRequest(msm_id=m_id).create()
             if is_success:
                 result = self.geolocator.get_loc(t_addr, results)
-                if result:
-                    self.results.append((t_addr,) + result)
+                if result:  # Make sure result is not None
+                    self.results.append((t_addr,) + tuple(result))
                 else:
                     print(f"Skipping {t_addr} due to failed location retrieval.")
             else:
@@ -72,9 +67,10 @@ def main():
     with open("final_processed.json", "r") as f:
         for line in f.readlines():
             data = json.loads(line)
-            ipv4 = data['ip_addr']
-            if ipv4 is not None:
+            ipv4 = data.get('ip_addr')
+            if ipv4:
                 ips.append(ipv4)
+    # Replace 'your_api_key_here' with your actual RIPE Atlas API key.
     engine = Engine(EngineType.RIPE, ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False)
     engine.run()
 
