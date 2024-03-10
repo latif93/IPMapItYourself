@@ -3,13 +3,13 @@ import json
 import time
 import pandas as pd
 from tqdm import tqdm
+import random
 from constants import DF_COLS, EngineType
 from single_radius import SingleRadius
 from geolocator import Geolocator
 from ripe_atlas_client import RIPEAtlasClient
 from ripe.atlas.cousteau import AtlasResultsRequest
 from pdbutils import PeeringDB
-# Assuming all necessary imports are done
 
 class Engine:
     def __init__(self, engine_type, ips, api_key=None, validation=False):
@@ -20,8 +20,6 @@ class Engine:
         if self.engine_type == EngineType.RIPE:
             assert self.api_key is not None, "API key is required for RIPE engine type"
             self.client = RIPEAtlasClient(api_key)
-        else:
-            self.client = None  # Placeholder for other client initializations
         self.single_radius = SingleRadius(PeeringDB(), self.client)
         self.geolocator = Geolocator(self.client)
         self.results = []
@@ -30,14 +28,15 @@ class Engine:
         start_time = datetime.now()
         print(f"Processing started at {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
 
+        print(f"Selected IPs for measurement: {self.ips}")
+
         for ip in tqdm(self.ips, desc="Measuring IP addresses"):
             self.single_radius.measure_addr(ip)
             time.sleep(0.1)  # Adjust based on API limits
 
-        # Wait for all measurements to complete without a maximum duration
         while not self.single_radius.check_for_completion():
             print("Checking if all measurements are complete")
-            time.sleep(60)  # Adjust the sleep time as needed
+            time.sleep(60)
 
         for t_addr, m_id in tqdm(self.single_radius.measurement_info, desc="Fetching measurement results"):
             is_success, results = AtlasResultsRequest(msm_id=m_id).create()
@@ -70,8 +69,12 @@ def main():
             ipv4 = data.get('ip_addr')
             if ipv4:
                 ips.append(ipv4)
-    # Replace 'your_api_key_here' with your actual RIPE Atlas API key.
-    engine = Engine(EngineType.RIPE, ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False)
+                
+    # Randomly select 5 IPs or the total number of IPs if less than 5
+    selected_ips = random.sample(ips, min(len(ips), 5))
+    print(f"Randomly selected IPs: {selected_ips}")
+    
+    engine = Engine(EngineType.RIPE, selected_ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False)
     engine.run()
 
 if __name__ == "__main__":
