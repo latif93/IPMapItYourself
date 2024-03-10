@@ -32,7 +32,8 @@ class Geolocator:
         
         if len(measurements) == 0:
             print(f'{addr} is un-pingable...')
-            return ['NAN'] * 5
+            return 'NAN', 'NAN', 'NAN', 'NAN', 'NAN', 'NAN'  # Match the expected number of elements
+
 
         lowest_rtt = measurements[0]['avg'] / 2 / 1000
         l_pid = measurements[0]['prb_id']
