@@ -1,1 +1,10 @@
-pip install aiohttp aiosignal annotated-types anyio asgiref attrs certifi charset-normalizer click-plugins cligj confu contourpy cycler dataclasses-json distro django django-countries django-handleref django-inet django-peeringdb fairlearn filetype fiona fonttools frozenlist fuzzywuzzy geographiclib geonamescache geopandas geopy greenlet h11 haversine httpcore httpx idna iniconfig jsonpatch jsonpointer kiwisolver langchain langchain-community langchain-core langchain-openai langsmith marshmallow matplotlib multidict munge mypy-extensions networkx numpy openai orjson osmnx packaging pandas peeringdb pillow pluggy pycountry pydantic pydantic-core pyparsing pyproj pytest python-dateutil pytricia pytz pyyaml requests ripe-atlas-cousteau scikit-learn scipy seaborn setuptools shapely six sniffio sqlalchemy sqlparse tenacity threadpoolctl tiktoken tomlkit twentyc-rpc typing-extensions typing-inspect tzdata urllib3 websocket-client wheel yarl
+pip install aiohttp aiosignal annotated-types anyio asgiref attrs certifi charset-normalizer click-plugins cligj confu contourpy cycler dataclasses-json distro django django-countries django-handleref django-inet django-peeringdb fairlearn filetype fiona fonttools frozenlist fuzzywuzzy geographiclib geonamescache geopandas geopy greenlet h11 haversine httpcore httpx idna iniconfig jsonpatch jsonpointer kiwisolver langchain langchain-community langchain-core langchain-openai langsmith marshmallow matplotlib multidict munge mypy-extensions networkx numpy openai orjson osmnx packaging pandas peeringdb pillow pluggy pycountry pydantic pydantic-core pyparsing pyproj pytest python-dateutil pytz pyyaml requests ripe-atlas-cousteau scikit-learn scipy seaborn setuptools shapely six sniffio sqlalchemy sqlparse tenacity threadpoolctl tiktoken tomlkit twentyc-rpc typing-extensions typing-inspect tzdata urllib3 websocket-client wheel yarl
+
+
+
+
+1. Run the above in the conda env you created, mine is 3.12.2
+
+2. Then for pytricia: go to https://visualstudio.microsoft.com/visual-cpp-build-tools/ and download and install, select the first box, the C++ build tools to install.  
+
+3. Run 'pip install pytricia' separately, otherwise non will install due to the error from pytricia package. 
