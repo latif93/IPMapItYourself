@@ -1,51 +1,66 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 import time
-import pandas
+import pandas as pd
 from constants import DF_COLS, EngineType
-from enum import Enum
 from single_radius import SingleRadius
 from geolocator import Geolocator
 from ripe_atlas_client import RIPEAtlasClient
-from pdbutils import PeeringDB
-from evaluator import Evaluator
 from ripe.atlas.cousteau import AtlasResultsRequest
+from pdbutils import PeeringDB
+from tqdm import tqdm
 
-class Engine():
-    """
-    This class orchestrates geolocation for a given set of IP addresses
-    """
+class Engine:
     def __init__(self, engine_type, ips, api_key=None, validation=False):
         self.engine_type = engine_type
         self.api_key = api_key
         self.ips = ips
-        if self.engine_type == EngineType.RIPE:
-            assert self.api_key is not None
-            client = RIPEAtlasClient(api_key)
-        self.single_radius = SingleRadius(PeeringDB(), client)
-        self.geolocator = Geolocator(client)
-        self.results = []
         self.validation = validation
-        
+        if self.engine_type == EngineType.RIPE:
+            assert self.api_key is not None, "API key is required for RIPE engine type"
+            self.client = RIPEAtlasClient(api_key)
+        else:
+            self.client = None  # or other client initialization for different engine types
+        self.single_radius = SingleRadius(PeeringDB(), self.client)
+        self.geolocator = Geolocator(self.client)
+        self.results = []
+
     def run(self):
         start_time = datetime.now()
-        print(f"Processing started at {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        max_duration = timedelta(minutes=30)  # Maximum duration to wait for all measurements
 
-        for ip in self.ips:
+        print(f"Processing started at {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        
+        for ip in tqdm(self.ips, desc="Measuring IP addresses"):
             self.single_radius.measure_addr(ip)
+            # Insert a minimal delay if necessary to avoid rate limiting issues
+            time.sleep(0.1)  # Adjust as necessary based on the API's rate limit
 
         while not self.single_radius.check_for_completion():
+            current_time = datetime.now()
+            if current_time - start_time > max_duration:
+                print("Maximum measurement duration reached, proceeding with available results.")
+                break
             print("Checking if all measurements are complete")
-            time.sleep(5 * 60)
+            time.sleep(60)  # Check every minute
 
-        for t_addr, m_id in self.single_radius.measurement_info:
+        for t_addr, m_id in tqdm(self.single_radius.measurement_info, desc="Fetching measurement results"):
             is_success, results = AtlasResultsRequest(msm_id=m_id).create()
-            city, c_code, country, p_lon, p_lat = self.geolocator.get_loc(t_addr, results)
-            self.results.append((t_addr, city, c_code, country, p_lon, p_lat))
+            if is_success:
+                result = self.geolocator.get_loc(t_addr, results)
+                if result:
+                    self.results.append((t_addr,) + result)
+                else:
+                    print(f"Skipping {t_addr} due to failed location retrieval.")
+            else:
+                print(f"Measurement for {t_addr} did not succeed.")
 
-        df = pandas.DataFrame(data=self.results, columns=DF_COLS)
-        df.to_csv('results.csv')
-        print('Wrote Results To File')
+        if self.results:
+            df = pd.DataFrame(data=self.results, columns=DF_COLS)
+            df.to_csv('results.csv')
+            print('Wrote Results To File')
+        else:
+            print("No results were obtained to write to file.")
 
         end_time = datetime.now()
         print(f"Processing finished at {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -60,9 +75,7 @@ def main():
             ipv4 = data['ip_addr']
             if ipv4 is not None:
                 ips.append(ipv4)
-    print(ips)
-    # engine = Engine(EngineType.RIPE, ips, '380531a9-c3fb-424f-8d1b-23cda9b881fd')
-    engine = Engine(EngineType.RIPE, ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee')
+    engine = Engine(EngineType.RIPE, ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False)
     engine.run()
 
 if __name__ == "__main__":

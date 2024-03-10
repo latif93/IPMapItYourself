@@ -10,12 +10,8 @@ STATIC_PATH = 'static'
 
 class RIPEAtlasClient():
     def __init__(self, api_key=None):
-        # self.api_key = '3c94fc15-d506-4168-86d0-c139ccf0a58a' dd
-        # self.api_key = '8dc13040-80fc-4959-86a9-6ee0eb15ec74'  not working
-        # self.api_key = 'eed1b2cd-e4ab-46b9-a698-ea1f1a1635be' dd
-        # self.api_key = '4d78e284-69a2-4434-8402-912b8266e191' dd
-
-        # new key: a2e9289f-675e-4ab6-9137-988e413390d8
+        
+        # Bert's api key: b6ee5451-b96f-4434-b826-a343a611e9ee
 
         self.api_key = api_key if api_key is not None else 'b6ee5451-b96f-4434-b826-a343a611e9ee'
         self.log_fname = f"artifacts/measurements.{datetime.datetime.now().strftime('%Y-%m-%d-%H_%M_%S')}.csv"
