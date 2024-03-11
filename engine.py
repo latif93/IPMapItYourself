@@ -62,7 +62,7 @@ class Engine:
 
 def main():
     ips = []
-    with open("final_processed\\final_processed_batch01.json", "r") as f:
+    with open("final_processed\\final_processed_batch02.json", "r") as f:
         for line in f.readlines():
             data = json.loads(line)
             ipv4 = data.get('ip_addr')
