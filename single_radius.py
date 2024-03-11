@@ -36,7 +36,8 @@ class SingleRadius():
         self.ixp_city_set_sizes = []
         self.peeringfac_city_set_sizes = []
         self.pyt = pytricia.PyTricia()
-        self.locator = Nominatim(user_agent="kedar")
+        self.locator = Nominatim(scheme='http',user_agent="alison")
+        self.coords_to_loc = {}
 
         
         self.remote = 'https://stat.ripe.net/data/asn-neighbours/data.json'
@@ -66,7 +67,10 @@ class SingleRadius():
 
                 asn, prefix, _ = line.strip().split()
                 self.pyt.insert(prefix, asn)
-    
+
+        with open('static/coords.json', 'r') as json_file:
+            self.coords_to_loc = json.load(json_file)
+
     def get_as_neighbours(self, asn):
         # fetch from remote if data does not exist in local cache 
         if asn not in self.as_neighbour: 
@@ -93,7 +97,8 @@ class SingleRadius():
             print(e)
             print(addr)
             raise e
-    def initial_probe_selection(self, addr, sample_config=ProbeSelectionConfig()):
+    
+    def initial_probe_selection(self, addr, ip_to_loc, sample_config=ProbeSelectionConfig()):
         """Section 3.1 of paper https://www.caida.org/catalog/papers/2020_ripe_ipmap_active_geolocation/ripe_ipmap_active_geolocation.pdf"""
 
         A = list()
@@ -108,9 +113,25 @@ class SingleRadius():
             print(f'Address {addr} can\'t be mapped to ASN')
             return []
         
-        # Step (2): Add to C the cities where AS(t) has a probe 
+        # Step (2): Add to C the cities where AS(t) has a probe & within constraints of location ?
         city_coords = self.ra_c.get_coords_by_asn(int(a_asn))
-        C_coords += city_coords 
+        C_coords += city_coords ## now filter ?
+
+        ##NEW
+        constraints = ip_to_loc[addr]
+        #print(self.coords_to_loc)
+        for c in C_coords:
+            if tuple(c) in self.coords_to_loc:
+                #use finest grain
+                if constraints['city']:
+                    if constraints['city']!= self.coords_to_loc[c]["cityName"]: #if wrong city, remove
+                        C_coords.remove(c)
+                elif constraints['state_region']: #if city not in region remove
+                    pass
+                elif constraints['country']: #if city not in country
+                    pass
+            else: #coords not in database ignore ig 
+                pass
 
         # Step (3): Add to A the ASes neighbours (BGP distance of 1) of AS(t)
         neighbours = self.get_as_neighbours(a_asn)
@@ -161,18 +182,19 @@ class SingleRadius():
                 'city_str': C_str, 
                 'city_coords': C_coords 
             }
-            probe_ids = self.select_probes(addr, A, C_str, C_coords, C_types, sample_config)
+            probe_ids = self.select_probes(addr, A, C_str, C_coords, C_types, sample_config, ip_to_loc)
         else:
             print(f'A & C both empty for address {addr}')
             probe_ids = []
 
         return probe_ids 
 
-    def select_probes(self, addr, A, C_str, C_coords, C_types, sample_config):
+    def select_probes(self, addr, A, C_str, C_coords, C_types, sample_config, ip_to_loc):
         probe_ids = set()
         try: 
             # Step 1: Select up to 100 random probes from AS(t)
             probes = self.ra_c.get_probes_in_asn(A[0].AS)
+
             probes = random.sample(probes, min([len(probes), int(100 * sample_config.as_proportion)]))
             probe_ids.update(probes)
             self.as_set_sizes.append(len(probe_ids))
@@ -338,8 +360,8 @@ class SingleRadius():
         probes = self.ra_c.get_all_probes() 
         return [str(addr) for addr in random.sample(probes, 300)]
 
-    def measure_addr(self, addr):
-        probes = self.initial_probe_selection(addr)
+    def measure_addr(self, addr, ip_to_loc):
+        probes = self.initial_probe_selection(addr, ip_to_loc)
 
         if not probes: # probes is empty
             probes = self.select_random_probes() 
@@ -355,3 +377,4 @@ class SingleRadius():
             json.dump(self.addr_to_city_list, f)
         
         self.ra_c.terminate()
+

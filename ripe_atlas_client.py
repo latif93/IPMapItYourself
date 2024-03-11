@@ -7,7 +7,6 @@ from constants import STOPPED_STATUSES
 
 STATIC_PATH = 'static'
 
-
 class RIPEAtlasClient():
     def __init__(self, api_key=None):
         
