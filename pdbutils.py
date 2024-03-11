@@ -4,6 +4,7 @@ from peeringdb import resource
 from collections import namedtuple
 Location = namedtuple('Location', ['city', 'country'])
 from fuzzywuzzy import fuzz
+from django.core.exceptions import ValidationError
 
 
 class PDBNetwork():
@@ -24,7 +25,13 @@ class PDBNetwork():
         return sorted(n_gen.netixlan_set.all(), key=lambda x: str(x.ixlan).upper())
 
     def _get_facs(self, n_gen):
-        return sorted(n_gen.netfac_set.all(), key=lambda x: str(x.fac).upper())
+            try:
+                facs = sorted(n_gen.netfac_set.all(), key=lambda x: str(x.fac).upper())
+                return facs
+            except ValidationError:
+                # Optionally log the error or handle it in a specific way
+                print("A ValidationError occurred. Skipping problematic data.")
+                return []
 
     def print_ixps(self):
         msg = 'List of IXPs target AS is peering in'
