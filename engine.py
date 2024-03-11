@@ -3,7 +3,6 @@ import json
 import time
 import pandas as pd
 from tqdm import tqdm
-import random
 from constants import DF_COLS, EngineType
 from single_radius import SingleRadius
 from geolocator import Geolocator
@@ -63,16 +62,16 @@ class Engine:
 
 def main():
     ips = []
-    with open("final_processed.json", "r") as f:
+    with open("final_processed\\final_processed_batch01.json", "r") as f:
         for line in f.readlines():
             data = json.loads(line)
             ipv4 = data.get('ip_addr')
             if ipv4:
                 ips.append(ipv4)
                 
-    # Randomly select 5 IPs or the total number of IPs if less than 5
-    selected_ips = random.sample(ips, min(len(ips), 10))
-    print(f"Randomly selected IPs: {selected_ips}")
+    # Removed the random selection logic, now processing all IPs
+    selected_ips = ips
+    print(f"Total IPs to process: {len(selected_ips)}")
     
     engine = Engine(EngineType.RIPE, selected_ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False)
     engine.run()
