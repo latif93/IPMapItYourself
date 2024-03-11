@@ -117,7 +117,7 @@ class SingleRadius():
         constraints = ip_to_loc[addr] ## added
         if constraints['country']:
             print("Filtering...")
-            city_coords = self.ra_c.get_coords_by_asn(int(a_asn, constraints['country']))
+            city_coords = self.ra_c.get_coords_by_asn(int(a_asn), constraints['country'])
         else:
             city_coords = self.ra_c.get_coords_by_asn(int(a_asn))
         #print(city_coords)
@@ -127,8 +127,10 @@ class SingleRadius():
 
         print(constraints)
         for c in C_coords:
+            print(" C is ", c)
             if constraints['state_region']: # filtering by city may be too much 
-                location = self.locator.reverse(str(c[1])+','+str(c[0])) #yas
+                location = self.locator.reverse(str(c[1])+','+str(c[0])) 
+                #location = self.locator.reverse(c)
                 #print(location)
                 #use finest grain first
                 #if constraints['city'] and location.get('city'):
