@@ -62,7 +62,7 @@ class Engine:
 
 def main():
     ips = []
-    with open("final_processed\\final_processed_batch02.json", "r") as f:
+    with open("final_processed\\final_processed_batch03.json", "r") as f:
         for line in f.readlines():
             data = json.loads(line)
             ipv4 = data.get('ip_addr')
@@ -73,8 +73,11 @@ def main():
     selected_ips = ips
     print(f"Total IPs to process: {len(selected_ips)}")
     
-    engine = Engine(EngineType.RIPE, selected_ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False)
+    #engine = Engine(EngineType.RIPE, selected_ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False) #bert
+    engine = Engine(EngineType.RIPE, selected_ips, '24725bf1-7ddf-4986-a826-0eb4bedafaac', validation=False) #ali
+
     engine.run()
+
 
 if __name__ == "__main__":
     main()
