@@ -71,7 +71,7 @@ def main():
                 ips.append(ipv4)
                 
     # Randomly select 5 IPs or the total number of IPs if less than 5
-    selected_ips = random.sample(ips, min(len(ips), 5))
+    selected_ips = random.sample(ips, min(len(ips), 10))
     print(f"Randomly selected IPs: {selected_ips}")
     
     engine = Engine(EngineType.RIPE, selected_ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False)
