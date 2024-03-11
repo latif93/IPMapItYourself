@@ -116,6 +116,7 @@ class SingleRadius():
         # Step (2): Add to C the cities where AS(t) has a probe & within constraints of location ?
         constraints = ip_to_loc[addr] ## added
         if constraints['country']:
+            print("Filtering...")
             city_coords = self.ra_c.get_coords_by_asn(int(a_asn, constraints['country']))
         else:
             city_coords = self.ra_c.get_coords_by_asn(int(a_asn))
@@ -124,7 +125,7 @@ class SingleRadius():
         ##NEW
         #filter by country immediately if possible 
 
-        
+        print(constraints)
         for c in C_coords:
             if constraints['state_region']: # filtering by city may be too much 
                 location = self.locator.reverse(str(c[1])+','+str(c[0])) #yas
@@ -134,6 +135,7 @@ class SingleRadius():
                 #    if constraints['city']!= location.get('city'): #if wrong city, remove
                 #        C_coords.remove(c)
                 if constraints['state_region'] and location.get('state'): #
+                    print("COMPARISON", constraints['state_region'], location.get('state'))
                     if constraints['state_region']!= location.get('state'): #
                         C_coords.remove(c)
             else:
@@ -156,10 +158,12 @@ class SingleRadius():
             #print(loc)
             for c in loc.city:
                 if c not in C_str:
+                    #print("COMPARISON", constraints['country'], loc.country)
                     if constraints['country'] and constraints['country']!=loc.country: 
                         continue
-                    C_str.append(loc)
-                    C_types.append(CITY_TYPE.IXP)
+                    else:
+                        C_str.append(loc)
+                        C_types.append(CITY_TYPE.IXP)
         # for city in network.ixp_cities:
         #     if city not in C:
         #         C.append(city)

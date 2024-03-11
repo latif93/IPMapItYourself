@@ -13,7 +13,7 @@ class RIPEAtlasClient():
         # Bert's api key: b6ee5451-b96f-4434-b826-a343a611e9ee
         #Ali's api key: 24725bf1-7ddf-4986-a826-0eb4bedafaac
 
-        self.api_key = api_key if api_key is not None else '24725bf1-7ddf-4986-a826-0eb4bedafaac'
+        self.api_key = api_key if api_key is not None else 'b6ee5451-b96f-4434-b826-a343a611e9ee'
         self.log_fname = f"artifacts/measurements.{datetime.datetime.now().strftime('%Y-%m-%d-%H_%M_%S')}.csv"
         self.log_f = None 
 
@@ -151,7 +151,7 @@ class RIPEAtlasClient():
 
 if __name__ == '__main__':
     ra_c = RIPEAtlasClient() 
-    print(ra_c.get_coords_by_asn(206238)) 
+    #print(ra_c.get_coords_by_asn(206238)) 
 
 
     
