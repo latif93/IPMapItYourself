@@ -119,27 +119,28 @@ class SingleRadius():
             city_coords = self.ra_c.get_coords_by_asn(int(a_asn, constraints['country']))
         else:
             city_coords = self.ra_c.get_coords_by_asn(int(a_asn))
-        C_coords += city_coords ## now filter ?
+        #print(city_coords)
+        C_coords += city_coords 
         ##NEW
         #filter by country immediately if possible 
 
         
         for c in C_coords:
-            if constraints['city'] or constraints['state_region']: # no reason to check unless there is something to compare to 
+            if constraints['state_region']: # filtering by city may be too much 
                 location = self.locator.reverse(str(c[1])+','+str(c[0])) #yas
-                print(location)
-                #use finest grain
-                if constraints['city'] and location.get('city'):
-                    if constraints['city']!= location.get('city'): #if wrong city, remove
-                        C_coords.remove(c)
-                elif constraints['state_region'] and location.get('state'): #if city not in region remove
-                    if constraints['state_region']!= location.get('state'): #if wrong city, remove
+                #print(location)
+                #use finest grain first
+                #if constraints['city'] and location.get('city'):
+                #    if constraints['city']!= location.get('city'): #if wrong city, remove
+                #        C_coords.remove(c)
+                if constraints['state_region'] and location.get('state'): #
+                    if constraints['state_region']!= location.get('state'): #
                         C_coords.remove(c)
             else:
-                pass
+                continue
 
         # Step (3): Add to A the ASes neighbours (BGP distance of 1) of AS(t)
-        neighbours = self.get_as_neighbours(a_asn)
+        neighbours = self.get_as_neighbours(a_asn) 
         for neighbor in neighbours:
             A.append(ASDescriptor(a_asn, AS_TYPE.NEIGHBOR))
 
@@ -152,8 +153,11 @@ class SingleRadius():
 
         # Step (4): Add to C the cities with IXPs where AS(t) is present
         for loc in network.ixp_cities:
+            #print(loc)
             for c in loc.city:
                 if c not in C_str:
+                    if constraints['country'] and constraints['country']!=loc.country: 
+                        continue
                     C_str.append(loc)
                     C_types.append(CITY_TYPE.IXP)
         # for city in network.ixp_cities:
@@ -168,7 +172,9 @@ class SingleRadius():
         # Step (6): Add to C all the cities corresponding to the facilites where AS(t) is present
         for loc in network.fac_cities:
             for c in loc.city:
-                if c not in C_str:
+                if c not in C_str: #adding constraint
+                    if constraints['country'] and constraints['country']!=loc.country: 
+                        continue
                     C_str.append(loc)
                     C_types.append(CITY_TYPE.PEERINGFAC)
 
