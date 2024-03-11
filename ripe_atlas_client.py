@@ -20,7 +20,6 @@ class RIPEAtlasClient():
         self.ASN_TO_RIPE_PROBE = {} # asn      to RIPE probe 
         self.PID_TO_RIPE_PROBE = {} # probe id to RIPE probe 
         self.COMPLETE_PROBE_INFO = {}
-
         self.live_measurements = set()
 
         self._setup()
@@ -56,11 +55,16 @@ class RIPEAtlasClient():
             probes = [probe['id'] for probe in self.ASN_TO_RIPE_PROBE[asn]]
         return probes
     
-    def get_coords_by_asn(self, asn):
+    def get_coords_by_asn(self, asn, country = None):
         coords = [] 
         
         if asn in self.ASN_TO_RIPE_PROBE:
-            coords = [coord['geometry']['coordinates'] for coord in self.ASN_TO_RIPE_PROBE[asn]]
+            if country:
+                for coord in self.ASN_TO_RIPE_PROBE[asn]:
+                    if coord['country'] == country:
+                      coords += coord['geometry']['coordinates']
+            else:
+                coords = [coord['geometry']['coordinates'] for coord in self.ASN_TO_RIPE_PROBE[asn]]
         
         return coords 
     

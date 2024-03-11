@@ -68,8 +68,8 @@ class SingleRadius():
                 asn, prefix, _ = line.strip().split()
                 self.pyt.insert(prefix, asn)
 
-        with open('static/coords.json', 'r') as json_file:
-            self.coords_to_loc = json.load(json_file)
+       # with open('static/coords.json', 'r') as json_file:
+       #     self.coords_to_loc = json.load(json_file)
 
     def get_as_neighbours(self, asn):
         # fetch from remote if data does not exist in local cache 
@@ -114,23 +114,28 @@ class SingleRadius():
             return []
         
         # Step (2): Add to C the cities where AS(t) has a probe & within constraints of location ?
-        city_coords = self.ra_c.get_coords_by_asn(int(a_asn))
+        constraints = ip_to_loc[addr] ## added
+        if constraints['country']:
+            city_coords = self.ra_c.get_coords_by_asn(int(a_asn, constraints['country']))
+        else:
+            city_coords = self.ra_c.get_coords_by_asn(int(a_asn))
         C_coords += city_coords ## now filter ?
-
         ##NEW
-        constraints = ip_to_loc[addr]
-        #print(self.coords_to_loc)
+        #filter by country immediately if possible 
+
+        
         for c in C_coords:
-            if tuple(c) in self.coords_to_loc:
+            if constraints['city'] or constraints['state_region']: # no reason to check unless there is something to compare to 
+                location = self.locator.reverse(str(c[1])+','+str(c[0])) #yas
+                print(location)
                 #use finest grain
-                if constraints['city']:
-                    if constraints['city']!= self.coords_to_loc[c]["cityName"]: #if wrong city, remove
+                if constraints['city'] and location.get('city'):
+                    if constraints['city']!= location.get('city'): #if wrong city, remove
                         C_coords.remove(c)
-                elif constraints['state_region']: #if city not in region remove
-                    pass
-                elif constraints['country']: #if city not in country
-                    pass
-            else: #coords not in database ignore ig 
+                elif constraints['state_region'] and location.get('state'): #if city not in region remove
+                    if constraints['state_region']!= location.get('state'): #if wrong city, remove
+                        C_coords.remove(c)
+            else:
                 pass
 
         # Step (3): Add to A the ASes neighbours (BGP distance of 1) of AS(t)
