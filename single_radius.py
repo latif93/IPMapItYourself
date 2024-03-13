@@ -15,6 +15,7 @@ from geopy.extra.rate_limiter import RateLimiter
 
 STATIC_PATH = 'static'
 ARTIFACTS_PATH = 'artifacts'
+SPACE_SIZE = 250
 
 class SingleRadius():
     def __init__(self, pdb_c, ra_c):
@@ -36,7 +37,7 @@ class SingleRadius():
         self.ixp_city_set_sizes = []
         self.peeringfac_city_set_sizes = []
         self.pyt = pytricia.PyTricia()
-        self.locator = Nominatim(scheme='http',user_agent="alison")
+        self.locator = Nominatim(scheme='http',user_agent="on")
         self.coords_to_loc = {}
 
         
@@ -68,8 +69,11 @@ class SingleRadius():
                 asn, prefix, _ = line.strip().split()
                 self.pyt.insert(prefix, asn)
 
-       # with open('static/coords.json', 'r') as json_file:
-       #     self.coords_to_loc = json.load(json_file)
+        with open('artifacts/coords_to_loc.json', 'r') as json_file:
+            try:
+                self.coords_to_loc = json.load(json_file)
+            except:
+                pass
 
     def get_as_neighbours(self, asn):
         # fetch from remote if data does not exist in local cache 
@@ -125,19 +129,25 @@ class SingleRadius():
         ##NEW
         #filter by country immediately if possible 
 
-        print(constraints)
+        #print(constraints)
         for c in C_coords:
-            print(" C is ", c)
+            #print(" C is ", c)
             if constraints['state_region']: # filtering by city may be too much 
-                location = self.locator.reverse(str(c[1])+','+str(c[0])) 
+                if c in self.coords_to_loc:
+                    location = self.coords_to_loc[c]
+                else:
+                    location = self.locator.reverse(str(c[1])+','+str(c[0])).raw['address']
+                    self.coords_to_loc[c] = location
+
                 #location = self.locator.reverse(c)
                 #print(location)
                 #use finest grain first
                 #if constraints['city'] and location.get('city'):
                 #    if constraints['city']!= location.get('city'): #if wrong city, remove
                 #        C_coords.remove(c)
+                #print(location)
                 if constraints['state_region'] and location.get('state'): #
-                    print("COMPARISON", constraints['state_region'], location.get('state'))
+                    #print("COMPARISON", constraints['state_region'], location.get('state'))
                     if constraints['state_region']!= location.get('state'): #
                         C_coords.remove(c)
             else:
@@ -211,12 +221,12 @@ class SingleRadius():
         try: 
             # Step 1: Select up to 100 random probes from AS(t)
             probes = self.ra_c.get_probes_in_asn(A[0].AS)
-
+            
             probes = random.sample(probes, min([len(probes), int(100 * sample_config.as_proportion)]))
             probe_ids.update(probes)
             self.as_set_sizes.append(len(probe_ids))
             as_set_size = len(probe_ids)
-            remaining_space = 500 - len(probe_ids)
+            remaining_space = SPACE_SIZE - len(probe_ids)
 
             # Step 2: Select up to 10 random probes from each AS in A
             one_hop_neighbors = dict()
@@ -258,7 +268,7 @@ class SingleRadius():
             # Step 3: Select up to 50 probes for each city in C
             city_probes = set()
             cache = {}
-            remaining_space = 500 - len(probe_ids)
+            remaining_space = SPACE_SIZE - len(probe_ids)
             city_counter = 0 # count how many cities we've processed so far
             target_city_total = 0
             ixp_city_total = 0
@@ -351,7 +361,7 @@ class SingleRadius():
 
 
 
-            remaining_space = 500 - len(probe_ids)
+            remaining_space = SPACE_SIZE - len(probe_ids)
             city_probes = list(city_probes)  # Convert city_probes to a list
             city_probes = random.sample(city_probes, min(len(city_probes), remaining_space))
             self.city_set_sizes.append(len(city_probes))
@@ -392,6 +402,9 @@ class SingleRadius():
         
         with open(self.addr_to_city_list_fn, 'w') as f:
             json.dump(self.addr_to_city_list, f)
+        
+        with open('artifacts/coords_to_loc.json', 'w') as f:
+            json.dump(self.coords_to_loc, f)
         
         self.ra_c.terminate()
 
