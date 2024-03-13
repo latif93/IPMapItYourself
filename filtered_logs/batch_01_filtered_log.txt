@@ -1,0 +1,440 @@
+Processing started at 2024-03-13 14:22:12
+Selected IPs for measurement: ['104.62.24.125', '99.184.48.72', '108.197.237.22', '23.112.21.119', '70.224.69.241', '69.221.127.231', '99.8.185.88', '108.235.115.84', '23.124.45.212', '107.143.24.42', '45.18.239.183', '99.24.175.204', '162.198.32.124', '99.2.21.99', '75.53.74.83', '65.4.197.206', '104.53.66.111', '172.4.84.243', '99.157.100.203', '71.140.151.32', '74.188.132.183', '104.190.36.13', '162.196.30.62', '104.5.97.167', '76.248.220.125', '104.179.226.132', '99.68.143.229', '104.178.100.115', '104.7.12.43', '99.10.246.230', '104.50.195.101', '99.167.206.253', '76.232.124.10', '108.214.5.223', '107.209.199.150', '108.196.167.67', '68.74.156.75', '99.58.170.183', '162.198.202.9', '70.143.97.116', '107.141.133.206', '104.4.167.88', '99.106.14.134', '108.250.108.51', '104.48.117.73', '104.53.20.86', '104.10.12.10', '108.250.10.206', '23.124.107.216', '12.94.199.74', '108.82.155.30', '71.136.232.60', '104.176.155.40', '162.230.77.209', '108.252.84.122', '76.205.132.147', '99.58.78.30', '107.210.1.212', '104.60.44.68', '74.232.83.193', '104.181.148.156', '172.125.238.4', '45.22.90.209', '99.39.65.243', '99.99.55.12', '104.57.71.95', '108.232.113.225', '99.119.144.238', '99.188.47.75', '99.0.85.192', '162.239.36.247', '76.218.90.131', '99.105.39.48', '23.117.25.15', '107.216.64.28', '107.213.23.51', '108.208.92.246', '45.22.91.14', '76.231.193.244', '23.119.211.7', '76.217.174.124', '104.191.76.171', '23.125.93.9', '99.121.228.54', '108.234.152.169', '75.18.111.244', '45.16.69.169', '99.169.56.171', '99.53.67.227', '45.16.81.165', '104.6.36.53', '162.206.62.225', '151.164.240.138', '67.121.135.2', '104.8.6.61', '99.45.32.205', '108.204.17.21', '104.61.52.188', '108.246.4.120', '23.127.13.221']
+Measuring IP addresses:   0%|                                                                                                                   | 0/100 [00:00<?, ?it/s]{'city': None, 'state_region': None, 'country': None}
+ C is  [-87.6285, 41.8795]
+ C is  [-96.7315, 32.9775]
+ C is  [-118.1225, 34.0775]
+ C is  [-80.1925, 26.6715]
+ C is  [-95.5205, 29.8715]
+ C is  [-84.2995, 33.8875]
+ C is  [-122.0395, 37.3515]
+ C is  [-121.6995, 38.5575]
+ C is  [-122.0425, 37.9375]
+ C is  [-78.9395, 35.9915]
+ C is  [-122.2195, 37.8595]
+ C is  [-84.2785, 34.0215]
+ C is  [-83.7395, 42.2485]
+ C is  [-95.4615, 29.6785]
+ C is  [-84.3785, 33.7405]
+ C is  [-80.7925, 28.1995]
+ C is  [-81.5395, 35.9115]
+ C is  [-74.1395, 40.3975]
+ C is  [-74.1325, 40.3985]
+ C is  [-87.9825, 42.0905]
+ C is  [-83.5925, 42.2585]
+ C is  [-121.9015, 37.7105]
+ C is  [-122.2405, 37.4885]
+ C is  [-96.8225, 32.9815]
+ C is  [-86.2695, 41.8205]
+ C is  [-122.0315, 36.9705]
+ C is  [-90.4725, 38.6015]
+ C is  [-82.3615, 29.6775]
+ C is  [-90.4915, 38.7775]
+ C is  [-79.0605, 35.8385]
+ C is  [-122.5185, 37.8795]
+ C is  [-122.3095, 37.5615]
+ C is  [-121.9025, 37.7595]
+ C is  [-96.7085, 32.9885]
+ C is  [-121.8595, 37.2875]
+ C is  [-84.8025, 33.3805]
+ C is  [-84.0815, 33.8695]
+ C is  [-78.6395, 35.7815]
+ C is  [-121.8205, 37.3675]
+ C is  [-122.2725, 37.7995]
+ C is  [-122.2325, 37.8395]
+ C is  [-122.3985, 37.7705]
+ C is  [-94.5705, 39.0385]
+ C is  [-84.3415, 33.8715]
+ C is  [-121.8985, 37.2585]
+ C is  [-78.8315, 35.8175]
+ C is  [-78.7105, 35.7415]
+ C is  [-87.8215, 41.8775]
+ C is  [-86.1595, 39.7675]
+ C is  [-121.8895, 37.3415]
+ C is  [-121.6325, 37.9875]
+ C is  [-122.3895, 37.7875]
+ C is  [-96.7125, 32.9805]
+ C is  [-84.4725, 33.9985]
+ C is  [-97.8115, 30.2815]
+ C is  [-122.0085, 37.3385]
+ C is  [-84.3315, 33.8295]
+ C is  [-122.0205, 37.2705]
+ C is  [-84.3905, 33.7815]
+ C is  [-91.0005, 30.3615]
+ C is  [-95.3725, 30.0985]
+ C is  [-122.6985, 38.4995]
+ C is  [-85.2415, 38.2275]
+ C is  [-78.9085, 35.8505]
+ C is  [-84.3905, 33.7505]
+ C is  [-78.9905, 35.9815]
+ C is  [-95.5285, 29.7175]
+ C is  [-98.2315, 29.5585]
+ C is  [-80.8705, 35.1275]
+ C is  [-84.4585, 33.9085]
+ C is  [-80.6605, 35.1685]
+ C is  [-101.8615, 33.5775]
+ C is  [-80.3015, 36.1315]
+ C is  [-95.3825, 29.7475]
+ C is  [-95.4895, 29.6775]
+ C is  [-94.2485, 36.3595]
+ C is  [-96.8205, 33.1515]
+ C is  [-81.4425, 41.3915]
+ C is  [-84.6005, 34.0685]
+ C is  [-121.4795, 38.5595]
+ C is  [-93.0595, 34.5015]
+ C is  [-116.3125, 43.6385]
+ C is  [-84.3825, 33.9205]
+ C is  [-118.2505, 34.0585]
+ C is  [-117.6885, 33.6185]
+ C is  [-122.5125, 37.8995]
+ C is  [-84.3925, 33.7475]
+ C is  [-87.7185, 42.0715]
+ C is  [-122.1225, 37.4295]
+ C is  [-80.6025, 28.1785]
+ C is  [-84.6325, 34.0615]
+ C is  [-97.6215, 30.4495]
+ C is  [-84.5485, 33.9495]
+ C is  [-89.3485, 43.1075]
+ C is  [-122.0525, 36.9705]
+ C is  [-122.1425, 37.4515]
+ C is  [-122.1205, 37.4005]
+ C is  [-89.3995, 43.0685]
+ C is  [-122.2815, 37.9105]
+ C is  [-89.4005, 43.0705]
+ C is  [-88.3325, 41.8905]
+ C is  [-82.5215, 34.6815]
+ C is  [-78.6795, 35.7185]
+ C is  [-122.2525, 37.7675]
+ C is  [-84.1395, 33.8875]
+ C is  [-117.9015, 33.6415]
+ C is  [-117.1615, 32.7205]
+ C is  [-83.1295, 40.0275]
+ C is  [-85.4515, 37.8485]
+ C is  [-89.9505, 38.6075]
+ C is  [-81.2405, 41.7285]
+ C is  [-94.4485, 38.7995]
+ C is  [-80.0925, 26.9315]
+ C is  [-83.7295, 42.2985]
+ C is  [-89.4025, 43.0695]
+ C is  [-98.7605, 29.5185]
+ C is  [-82.8985, 42.4475]
+ C is  [-122.4215, 37.7675]
+ C is  [-96.7695, 32.8295]
+ C is  [-94.7995, 38.8215]
+ C is  [-81.3185, 28.4785]
+ C is  [-89.9925, 29.8515]
+ C is  [-95.4305, 29.7005]
+ C is  [-83.5785, 32.5375]
+ C is  [-78.4815, 35.7905]
+ C is  [-90.3315, 38.5595]
+ C is  [-95.0005, 39.2795]
+ C is  [-122.2705, 37.5615]
+ C is  [-121.8895, 37.3385]
+ C is  [-117.1385, 32.8275]
+ C is  [-88.9095, 30.4685]
+ C is  [-91.1625, 30.6515]
+ C is  [-90.2415, 38.5985]
+ C is  [-90.3495, 38.6405]
+ C is  [-83.0495, 42.3295]
+ C is  [-90.0685, 38.5785]
+ C is  [-88.7785, 43.4185]
+ C is  [-122.0615, 37.3715]
+ C is  [-88.0095, 30.6505]
+ C is  [-88.2305, 30.6475]
+ C is  [-122.2705, 37.4585]
+ C is  [-82.5195, 35.3585]
+ C is  [-122.4015, 37.7685]
+ C is  [-81.7095, 30.3205]
+ C is  [-96.5385, 29.7095]
+ C is  [-80.1795, 33.0285]
+No cache for ASN 7018. Fetching from remote...
+Chicago, US
+Richardson, US
+Sunnyvale, US
+Davis, US
+Concord, US
+Durham, US
+Oakland, US
+Roswell, US
+Ann Arbor, US
+Houston, US
+.
+.
+.
+.
+.
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=38.8215&lon=-94.7995&format=json&accept-language=en&addressdetails=1
+Olathe, US
+Houston, US
+Leavenworth, US
+San Jose, US
+San Diego, US
+Biloxi, US
+St. Louis, US
+Detroit, US
+Mountain View, US
+Mobile, US
+Redwood City, US
+San Francisco, US
+Jacksonville, US
+Columbus, US
+Summerville, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 468
+Creating measurement for 45.18.239.183...
+Measuring IP addresses:  11%|███████████▍                                                                                            | 11/100 [18:17<2:24:30, 97.42s/it]{'city': None, 'state_region': None, 'country': None}
+ C is  [-87.6285, 41.8795]
+ C is  [-96.7315, 32.9775]
+ C is  [-118.1225, 34.0775]
+ C is  [-80.1925, 26.6715]
+ C is  [-95.5205, 29.8715]
+ C is  [-84.2995, 33.8875]
+ C is  [-122.0395, 37.3515]
+ C is  [-121.6995, 38.5575]
+ C is  [-122.0425, 37.9375]
+ C is  [-78.9395, 35.9915]
+ C is  [-122.2195, 37.8595]
+ C is  [-84.2785, 34.0215]
+ C is  [-83.7395, 42.2485]
+ C is  [-95.4615, 29.6785]
+ C is  [-84.3785, 33.7405]
+ C is  [-80.7925, 28.1995]
+ C is  [-81.5395, 35.9115]
+ C is  [-74.1395, 40.3975]
+ C is  [-74.1325, 40.3985]
+ C is  [-87.9825, 42.0905]
+ C is  [-83.5925, 42.2585]
+ C is  [-121.9015, 37.7105]
+ C is  [-122.2405, 37.4885]
+ C is  [-96.8225, 32.9815]
+ C is  [-86.2695, 41.8205]
+ C is  [-122.0315, 36.9705]
+ C is  [-90.4725, 38.6015]
+ C is  [-82.3615, 29.6775]
+ C is  [-90.4915, 38.7775]
+ C is  [-79.0605, 35.8385]
+ C is  [-122.5185, 37.8795]
+ C is  [-122.3095, 37.5615]
+ C is  [-121.9025, 37.7595]
+ C is  [-96.7085, 32.9885]
+ C is  [-121.8595, 37.2875]
+ C is  [-84.8025, 33.3805]
+ C is  [-84.0815, 33.8695]
+ C is  [-78.6395, 35.7815]
+ C is  [-121.8205, 37.3675]
+ C is  [-122.2725, 37.7995]
+ C is  [-122.2325, 37.8395]
+ C is  [-122.3985, 37.7705]
+ C is  [-94.5705, 39.0385]
+ C is  [-84.3415, 33.8715]
+ C is  [-121.8985, 37.2585]
+ C is  [-78.8315, 35.8175]
+ C is  [-78.7105, 35.7415]
+ C is  [-87.8215, 41.8775]
+ C is  [-86.1595, 39.7675]
+ C is  [-121.8895, 37.3415]
+ C is  [-121.6325, 37.9875]
+ C is  [-122.3895, 37.7875]
+ C is  [-96.7125, 32.9805]
+ C is  [-84.4725, 33.9985]
+ C is  [-97.8115, 30.2815]
+ C is  [-122.0085, 37.3385]
+ C is  [-84.3315, 33.8295]
+ C is  [-122.0205, 37.2705]
+ C is  [-84.3905, 33.7815]
+ C is  [-91.0005, 30.3615]
+ C is  [-95.3725, 30.0985]
+ C is  [-122.6985, 38.4995]
+ C is  [-85.2415, 38.2275]
+ C is  [-78.9085, 35.8505]
+ C is  [-84.3905, 33.7505]
+ C is  [-78.9905, 35.9815]
+ C is  [-95.5285, 29.7175]
+ C is  [-98.2315, 29.5585]
+ C is  [-80.8705, 35.1275]
+ C is  [-84.4585, 33.9085]
+ C is  [-80.6605, 35.1685]
+ C is  [-101.8615, 33.5775]
+ C is  [-80.3015, 36.1315]
+ C is  [-95.3825, 29.7475]
+ C is  [-95.4895, 29.6775]
+ C is  [-94.2485, 36.3595]
+ C is  [-96.8205, 33.1515]
+ C is  [-81.4425, 41.3915]
+ C is  [-84.6005, 34.0685]
+ C is  [-121.4795, 38.5595]
+ C is  [-93.0595, 34.5015]
+ C is  [-116.3125, 43.6385]
+ C is  [-84.3825, 33.9205]
+ C is  [-118.2505, 34.0585]
+ C is  [-117.6885, 33.6185]
+ C is  [-122.5125, 37.8995]
+ C is  [-84.3925, 33.7475]
+ C is  [-87.7185, 42.0715]
+ C is  [-122.1225, 37.4295]
+ C is  [-80.6025, 28.1785]
+ C is  [-84.6325, 34.0615]
+ C is  [-97.6215, 30.4495]
+ C is  [-84.5485, 33.9495]
+ C is  [-89.3485, 43.1075]
+ C is  [-122.0525, 36.9705]
+ C is  [-122.1425, 37.4515]
+ C is  [-122.1205, 37.4005]
+ C is  [-89.3995, 43.0685]
+ C is  [-122.2815, 37.9105]
+ C is  [-89.4005, 43.0705]
+ C is  [-88.3325, 41.8905]
+ C is  [-82.5215, 34.6815]
+ C is  [-78.6795, 35.7185]
+ C is  [-122.2525, 37.7675]
+ C is  [-84.1395, 33.8875]
+ C is  [-117.9015, 33.6415]
+ C is  [-117.1615, 32.7205]
+ C is  [-83.1295, 40.0275]
+ C is  [-85.4515, 37.8485]
+ C is  [-89.9505, 38.6075]
+ C is  [-81.2405, 41.7285]
+ C is  [-94.4485, 38.7995]
+ C is  [-80.0925, 26.9315]
+ C is  [-83.7295, 42.2985]
+ C is  [-89.4025, 43.0695]
+ C is  [-98.7605, 29.5185]
+ C is  [-82.8985, 42.4475]
+ C is  [-122.4215, 37.7675]
+ C is  [-96.7695, 32.8295]
+ C is  [-94.7995, 38.8215]
+ C is  [-81.3185, 28.4785]
+ C is  [-89.9925, 29.8515]
+ C is  [-95.4305, 29.7005]
+ C is  [-83.5785, 32.5375]
+ C is  [-78.4815, 35.7905]
+ C is  [-90.3315, 38.5595]
+ C is  [-95.0005, 39.2795]
+ C is  [-122.2705, 37.5615]
+ C is  [-121.8895, 37.3385]
+ C is  [-117.1385, 32.8275]
+ C is  [-88.9095, 30.4685]
+ C is  [-91.1625, 30.6515]
+ C is  [-90.2415, 38.5985]
+ C is  [-90.3495, 38.6405]
+ C is  [-83.0495, 42.3295]
+ C is  [-90.0685, 38.5785]
+ C is  [-88.7785, 43.4185]
+ C is  [-122.0615, 37.3715]
+ C is  [-88.0095, 30.6505]
+ C is  [-88.2305, 30.6475]
+ C is  [-122.2705, 37.4585]
+ C is  [-82.5195, 35.3585]
+ C is  [-122.4015, 37.7685]
+ C is  [-81.7095, 30.3205]
+ C is  [-96.5385, 29.7095]
+ C is  [-80.1795, 33.0285]
+Chicago, US
+Richardson, US
+Sunnyvale, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=38.5575&lon=-121.6995&format=json&accept-language=en&addressdetails=1
+Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000018AD364C0E0>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')': /reverse?lat=38.5575&lon=-121.6995&format=json&accept-language=en&addressdetails=1
+Measuring IP addresses:  11%|███████████▎                                                                                           | 11/100 [18:27<2:29:18, 100.66s/it]
+Traceback (most recent call last):
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000018AD364CB00>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connectionpool.py", line 877, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /reverse?lat=38.5575&lon=-121.6995&format=json&accept-language=en&addressdetails=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000018AD364CB00>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\geopy\adapters.py", line 482, in _request
+    resp = self.session.get(url, timeout=timeout, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\requests\sessions.py", line 725, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\requests\sessions.py", line 266, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /reverse?lat=38.5575&lon=-121.6995&format=json&accept-language=en&addressdetails=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000018AD364CB00>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_FILTER\IPMapItYourself\engine.py", line 86, in <module>
+    main()
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_FILTER\IPMapItYourself\engine.py", line 83, in main
+    engine.run()
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_FILTER\IPMapItYourself\engine.py", line 35, in run
+    self.single_radius.measure_addr(ip, self.ip_to_loc)
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_FILTER\IPMapItYourself\single_radius.py", line 381, in measure_addr        
+    probes = self.initial_probe_selection(addr, ip_to_loc)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_FILTER\IPMapItYourself\single_radius.py", line 202, in initial_probe_selection
+    probe_ids = self.select_probes(addr, A, C_str, C_coords, C_types, sample_config, ip_to_loc)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_FILTER\IPMapItYourself\single_radius.py", line 271, in select_probes       
+    location = self.locator.reverse(", ".join(city_coords), language='en')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\geopy\geocoders\nominatim.py", line 372, in reverse
+    return self._call_geocoder(url, callback, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\geopy\geocoders\base.py", line 368, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\geopy\adapters.py", line 472, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ybxYB\anaconda3\envs\enhancedrdns\Lib\site-packages\geopy\adapters.py", line 494, in _request
+    raise GeocoderUnavailable(message)
+geopy.exc.GeocoderUnavailable: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /reverse?lat=38.5575&lon=-121.6995&format=json&accept-language=en&addressdetails=1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000018AD364CB00>, 'Connection to nominatim.openstreetmap.org timed out. (connect timeout=1)'))
