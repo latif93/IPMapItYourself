@@ -1,0 +1,539 @@
+Processing started at 2024-03-13 11:58:14
+Selected IPs for measurement: ['200.232.35.154', '201.91.101.241', '187.50.16.254', '177.61.152.178', '187.51.250.186', '189.109.81.238', '179.245.73.170', '201.91.45.142', '201.61.212.181', '187.50.5.90', '187.100.82.118', '189.20.20.242', '201.61.238.199', '201.61.134.9', '189.57.171.234', '189.109.193.50', '187.8.59.42', '189.20.16.182', '179.175.52.41', '189.44.157.241', '179.175.1.38', '179.175.3.142', '189.44.143.22', '189.44.62.185', '189.108.245.30', '187.100.177.21', '187.9.229.22', '201.61.9.85', '187.93.225.202', '187.51.114.210', '189.108.18.126', '152.255.192.129', '201.91.233.162', '200.153.83.230', '191.210.141.242', '187.51.238.170', '187.9.18.246', '187.92.67.250', '152.255.168.252', '189.20.86.137', '189.20.181.82', '187.50.146.174', '200.153.83.154', '189.56.178.229', '179.175.7.170', '187.8.4.226', '187.93.235.242', '187.100.8.42', '187.100.198.15', '187.51.100.97', '130.81.46.165', '67.132.150.170', '204.134.184.130', '63.158.168.43', '71.115.225.154', '204.148.48.138', '71.215.241.5', '204.148.178.130', '198.36.192.1', '63.234.203.166', '204.245.103.174', '96.242.34.184', '63.232.3.226', '204.148.236.93', '63.155.109.237', '100.0.112.82', '70.56.194.219', '98.118.97.218', '67.14.106.74', '67.132.154.26', '152.179.182.122', '140.222.237.31', '71.215.72.36', '204.148.80.162', '65.206.120.214', '63.232.81.94', '71.32.31.10', '67.148.224.226', '65.207.89.210', '63.238.207.162', '65.120.248.202', '130.81.174.193', '96.227.190.72', '157.130.104.94', '204.147.88.50', '63.239.0.74', '100.41.16.90', '152.179.2.222', '71.213.29.54', '204.148.141.34', '198.224.189.97', '100.41.4.158', '208.168.166.118', '96.243.28.196', '63.234.17.102', '65.120.244.166', '209.211.3.214', '65.194.74.66', '68.177.36.50', '63.157.64.6']
+Measuring IP addresses:   0%|                                                                                                                   | 0/100 [00:00<?, ?it/s]No cache for ASN 10429. Fetching from remote...
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 200.232.35.154
+Creating measurement for 200.232.35.154...
+Measuring IP addresses:   1%|█                                                                                                          | 1/100 [00:06<10:33,  6.40s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 201.91.101.241
+Creating measurement for 201.91.101.241...
+Measuring IP addresses:   2%|██▏                                                                                                        | 2/100 [00:07<05:24,  3.31s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.50.16.254
+Creating measurement for 187.50.16.254...
+Measuring IP addresses:   3%|███▏                                                                                                       | 3/100 [00:08<03:43,  2.30s/it]No cache for ASN 26599. Fetching from remote...
+São Paulo, BR
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 177.61.152.178...
+Measuring IP addresses:   4%|████▎                                                                                                      | 4/100 [00:12<04:46,  2.98s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.51.250.186
+Creating measurement for 187.51.250.186...
+Measuring IP addresses:   5%|█████▎                                                                                                     | 5/100 [00:13<03:37,  2.29s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.109.81.238
+Creating measurement for 189.109.81.238...
+Measuring IP addresses:   6%|██████▍                                                                                                    | 6/100 [00:14<02:59,  1.90s/it]São Paulo, BR
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 179.245.73.170...
+Measuring IP addresses:   7%|███████▍                                                                                                   | 7/100 [00:17<03:27,  2.23s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 201.91.45.142
+Creating measurement for 201.91.45.142...
+Measuring IP addresses:   8%|████████▌                                                                                                  | 8/100 [00:18<02:52,  1.88s/it]No cache for ASN 27699. Fetching from remote...
+São Paulo, BR
+São Paulo, BR
+São Paulo, BR
+São Bernardo do Campo, BR
+São Paulo, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 67
+Creating measurement for 201.61.212.181...
+Measuring IP addresses:   9%|█████████▋                                                                                                 | 9/100 [00:25<05:04,  3.35s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.50.5.90
+Creating measurement for 187.50.5.90...
+Measuring IP addresses:  10%|██████████▌                                                                                               | 10/100 [00:26<03:58,  2.66s/it]São Paulo, BR
+São Paulo, BR
+São Paulo, BR
+São Bernardo do Campo, BR
+São Paulo, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 67
+Creating measurement for 187.100.82.118...
+Measuring IP addresses:  11%|███████████▋                                                                                              | 11/100 [00:32<05:16,  3.55s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.20.20.242
+Creating measurement for 189.20.20.242...
+Measuring IP addresses:  12%|████████████▋                                                                                             | 12/100 [00:33<04:07,  2.81s/it]São Paulo, BR
+São Paulo, BR
+São Paulo, BR
+São Bernardo do Campo, BR
+São Paulo, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 67
+Creating measurement for 201.61.238.199...
+Measuring IP addresses:  13%|█████████████▊                                                                                            | 13/100 [00:39<05:21,  3.69s/it]São Paulo, BR
+São Paulo, BR
+São Paulo, BR
+São Bernardo do Campo, BR
+São Paulo, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 67
+Creating measurement for 201.61.134.9...
+Measuring IP addresses:  14%|██████████████▊                                                                                           | 14/100 [00:44<06:06,  4.26s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.57.171.234
+Creating measurement for 189.57.171.234...
+Measuring IP addresses:  15%|███████████████▉                                                                                          | 15/100 [00:45<04:42,  3.32s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.109.193.50
+Creating measurement for 189.109.193.50...
+Measuring IP addresses:  16%|████████████████▉                                                                                         | 16/100 [00:46<03:42,  2.65s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.8.59.42
+Creating measurement for 187.8.59.42...
+Measuring IP addresses:  17%|██████████████████                                                                                        | 17/100 [00:47<03:01,  2.19s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.20.16.182
+Creating measurement for 189.20.16.182...
+Measuring IP addresses:  18%|███████████████████                                                                                       | 18/100 [00:49<02:33,  1.87s/it]São Paulo, BR
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 179.175.52.41...
+Measuring IP addresses:  19%|████████████████████▏                                                                                     | 19/100 [00:52<02:57,  2.19s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.44.157.241
+Creating measurement for 189.44.157.241...
+Measuring IP addresses:  20%|█████████████████████▏                                                                                    | 20/100 [00:53<02:29,  1.87s/it]São Paulo, BR
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 179.175.1.38...
+Measuring IP addresses:  21%|██████████████████████▎                                                                                   | 21/100 [00:55<02:50,  2.16s/it]São Paulo, BR
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 179.175.3.142...
+Measuring IP addresses:  22%|███████████████████████▎                                                                                  | 22/100 [00:58<03:03,  2.36s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.44.143.22
+Creating measurement for 189.44.143.22...
+Measuring IP addresses:  23%|████████████████████████▍                                                                                 | 23/100 [00:59<02:32,  1.98s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.44.62.185
+Creating measurement for 189.44.62.185...
+Measuring IP addresses:  24%|█████████████████████████▍                                                                                | 24/100 [01:00<02:09,  1.71s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.108.245.30
+Creating measurement for 189.108.245.30...
+Measuring IP addresses:  25%|██████████████████████████▌                                                                               | 25/100 [01:02<01:54,  1.53s/it]São Paulo, BR
+São Paulo, BR
+São Paulo, BR
+São Bernardo do Campo, BR
+São Paulo, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 67
+Creating measurement for 187.100.177.21...
+Measuring IP addresses:  26%|███████████████████████████▌                                                                              | 26/100 [01:07<03:26,  2.79s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.9.229.22
+Creating measurement for 187.9.229.22...
+Measuring IP addresses:  27%|████████████████████████████▌                                                                             | 27/100 [01:08<02:46,  2.28s/it]São Paulo, BR
+São Paulo, BR
+São Paulo, BR
+São Bernardo do Campo, BR
+São Paulo, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 67
+Creating measurement for 201.61.9.85...
+Measuring IP addresses:  28%|█████████████████████████████▋                                                                            | 28/100 [01:14<03:59,  3.32s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.93.225.202
+Creating measurement for 187.93.225.202...
+Measuring IP addresses:  29%|██████████████████████████████▋                                                                           | 29/100 [01:15<03:09,  2.66s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.51.114.210
+Creating measurement for 187.51.114.210...
+Measuring IP addresses:  30%|███████████████████████████████▊                                                                          | 30/100 [01:16<02:34,  2.21s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.108.18.126
+Creating measurement for 189.108.18.126...
+Measuring IP addresses:  31%|████████████████████████████████▊                                                                         | 31/100 [01:18<02:11,  1.90s/it]São Paulo, BR
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 152.255.192.129...
+Measuring IP addresses:  32%|█████████████████████████████████▉                                                                        | 32/100 [01:20<02:28,  2.18s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 201.91.233.162
+Creating measurement for 201.91.233.162...
+Measuring IP addresses:  33%|██████████████████████████████████▉                                                                       | 33/100 [01:22<02:07,  1.90s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 200.153.83.230
+Creating measurement for 200.153.83.230...
+Measuring IP addresses:  34%|████████████████████████████████████                                                                      | 34/100 [01:23<01:49,  1.66s/it]São Paulo, BR
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=-22.9095&lon=-47.0615&format=json&accept-language=en&addressdetails=1
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 191.210.141.242...
+Measuring IP addresses:  35%|█████████████████████████████████████                                                                     | 35/100 [01:27<02:33,  2.37s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.51.238.170
+Creating measurement for 187.51.238.170...
+Measuring IP addresses:  36%|██████████████████████████████████████▏                                                                   | 36/100 [01:28<02:07,  1.99s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.9.18.246
+Creating measurement for 187.9.18.246...
+Measuring IP addresses:  37%|███████████████████████████████████████▏                                                                  | 37/100 [01:29<01:49,  1.74s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.92.67.250
+Creating measurement for 187.92.67.250...
+Measuring IP addresses:  38%|████████████████████████████████████████▎                                                                 | 38/100 [01:30<01:35,  1.55s/it]São Paulo, BR
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 152.255.168.252...
+Measuring IP addresses:  39%|█████████████████████████████████████████▎                                                                | 39/100 [01:33<01:55,  1.89s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.20.86.137
+Creating measurement for 189.20.86.137...
+Measuring IP addresses:  40%|██████████████████████████████████████████▍                                                               | 40/100 [01:34<01:39,  1.66s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.20.181.82
+Creating measurement for 189.20.181.82...
+Measuring IP addresses:  41%|███████████████████████████████████████████▍                                                              | 41/100 [01:35<01:28,  1.51s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.50.146.174
+Creating measurement for 187.50.146.174...
+Measuring IP addresses:  42%|████████████████████████████████████████████▌                                                             | 42/100 [01:36<01:20,  1.39s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 200.153.83.154
+Creating measurement for 200.153.83.154...
+Measuring IP addresses:  43%|█████████████████████████████████████████████▌                                                            | 43/100 [01:37<01:14,  1.30s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 189.56.178.229
+Creating measurement for 189.56.178.229...
+Measuring IP addresses:  44%|██████████████████████████████████████████████▋                                                           | 44/100 [01:38<01:09,  1.24s/it]São Paulo, BR
+Campinas, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 58
+Creating measurement for 179.175.7.170...
+Measuring IP addresses:  45%|███████████████████████████████████████████████▋                                                          | 45/100 [01:41<01:34,  1.72s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.8.4.226
+Creating measurement for 187.8.4.226...
+Measuring IP addresses:  46%|████████████████████████████████████████████████▊                                                         | 46/100 [01:42<01:24,  1.56s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.93.235.242
+Creating measurement for 187.93.235.242...
+Measuring IP addresses:  47%|█████████████████████████████████████████████████▊                                                        | 47/100 [01:44<01:15,  1.42s/it]São Paulo, BR
+São Paulo, BR
+São Paulo, BR
+São Bernardo do Campo, BR
+São Paulo, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 67
+Creating measurement for 187.100.8.42...
+Measuring IP addresses:  48%|██████████████████████████████████████████████████▉                                                       | 48/100 [01:50<02:27,  2.84s/it]São Paulo, BR
+São Paulo, BR
+São Paulo, BR
+São Bernardo do Campo, BR
+São Paulo, BR
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 67
+Creating measurement for 187.100.198.15...
+Measuring IP addresses:  49%|███████████████████████████████████████████████████▉                                                      | 49/100 [01:56<03:12,  3.78s/it]Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 0
+No RIPE probe in AS for address 187.51.100.97
+Creating measurement for 187.51.100.97...
+Measuring IP addresses:  50%|█████████████████████████████████████████████████████                                                     | 50/100 [01:57<02:29,  2.98s/it]No cache for ASN 701. Fetching from remote...
+Got set sizes -- Target : 0 |  One Hop Total : 500 | Neighbor : 0 | IXP : 500 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 500
+Creating measurement for 130.81.46.165...
+Measuring IP addresses:  51%|██████████████████████████████████████████████████████                                                    | 51/100 [02:11<05:09,  6.31s/it]No cache for ASN 209. Fetching from remote...
+Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Seattle, US
+Omaha, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=46.8805&lon=-96.7885&format=json&accept-language=en&addressdetails=1
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 67.132.150.170...
+Measuring IP addresses:  52%|███████████████████████████████████████████████████████                                                   | 52/100 [02:56<14:25, 18.03s/it]Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=47.5195&lon=-122.3925&format=json&accept-language=en&addressdetails=1
+Seattle, US
+Seattle, US
+Omaha, US
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 204.134.184.130...
+Measuring IP addresses:  53%|████████████████████████████████████████████████████████▏                                                 | 53/100 [03:32<18:13, 23.26s/it]Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=46.9575&lon=-114.1195&format=json&accept-language=en&addressdetails=1
+Seattle, US
+Omaha, US
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 63.158.168.43...
+Measuring IP addresses:  54%|█████████████████████████████████████████████████████████▏                                                | 54/100 [04:08<20:47, 27.12s/it]Got set sizes -- Target : 0 |  One Hop Total : 500 | Neighbor : 0 | IXP : 500 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 500
+Creating measurement for 71.115.225.154...
+Measuring IP addresses:  55%|██████████████████████████████████████████████████████████▎                                               | 55/100 [04:09<14:31, 19.37s/it]Got set sizes -- Target : 0 |  One Hop Total : 500 | Neighbor : 0 | IXP : 500 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 500
+Creating measurement for 204.148.48.138...
+Measuring IP addresses:  56%|███████████████████████████████████████████████████████████▎                                              | 56/100 [04:10<10:12, 13.93s/it]Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Seattle, US
+Omaha, US
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 71.215.241.5...
+Measuring IP addresses:  57%|████████████████████████████████████████████████████████████▍                                             | 57/100 [04:45<14:20, 20.01s/it]Got set sizes -- Target : 0 |  One Hop Total : 500 | Neighbor : 0 | IXP : 500 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 500
+Creating measurement for 204.148.178.130...
+Measuring IP addresses:  58%|█████████████████████████████████████████████████████████████▍                                            | 58/100 [04:46<10:04, 14.39s/it]Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Seattle, US
+Omaha, US
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 198.36.192.1...
+Measuring IP addresses:  59%|██████████████████████████████████████████████████████████████▌                                           | 59/100 [05:21<14:01, 20.53s/it]Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Seattle, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=45.0285&lon=-93.3525&format=json&accept-language=en&addressdetails=1
+Omaha, US
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 63.234.203.166...
+Measuring IP addresses:  60%|███████████████████████████████████████████████████████████████▌                                          | 60/100 [05:55<16:31, 24.79s/it]Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Seattle, US
+Omaha, US
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 204.245.103.174...
+Measuring IP addresses:  61%|████████████████████████████████████████████████████████████████▋                                         | 61/100 [06:29<17:47, 27.38s/it]Got set sizes -- Target : 0 |  One Hop Total : 500 | Neighbor : 0 | IXP : 500 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 500
+Creating measurement for 96.242.34.184...
+Measuring IP addresses:  62%|█████████████████████████████████████████████████████████████████▋                                        | 62/100 [06:30<12:22, 19.54s/it]Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Seattle, US
+Omaha, US
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 63.232.3.226...
+Measuring IP addresses:  63%|██████████████████████████████████████████████████████████████████▊                                       | 63/100 [07:05<14:53, 24.14s/it]Got set sizes -- Target : 0 |  One Hop Total : 500 | Neighbor : 0 | IXP : 500 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 500
+Creating measurement for 204.148.236.93...
+Measuring IP addresses:  64%|███████████████████████████████████████████████████████████████████▊                                      | 64/100 [07:06<10:21, 17.27s/it]Seattle, US
+Seattle, US
+Seattle, US
+Seattle, US
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=47.5395&lon=-122.2825&format=json&accept-language=en&addressdetails=1
+Seattle, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=45.6405&lon=-122.5625&format=json&accept-language=en&addressdetails=1
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Seattle, US
+Omaha, US
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 63.155.109.237...
+Measuring IP addresses:  65%|████████████████████████████████████████████████████████████████████▉                                     | 65/100 [07:44<13:39, 23.43s/it]Got set sizes -- Target : 0 |  One Hop Total : 500 | Neighbor : 0 | IXP : 500 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 500
+Creating measurement for 100.0.112.82...
+Measuring IP addresses:  66%|█████████████████████████████████████████████████████████████████████▉                                    | 66/100 [07:45<09:30, 16.77s/it]Seattle, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=47.6585&lon=-122.2685&format=json&accept-language=en&addressdetails=1
+Seattle, US
+Seattle, US
+Seattle, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=45.5585&lon=-122.6895&format=json&accept-language=en&addressdetails=1
+Portland, US
+Portland, US
+Seattle, US
+Saint Paul, US
+Seattle, US
+Vancouver, US
+Thornton, US
+Seattle, US
+Des Moines, US
+Seattle, US
+Seattle, US
+Omaha, US
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /reverse?lat=46.8805&lon=-96.7885&format=json&accept-language=en&addressdetails=1
+Fargo, US
+Portland, US
+Portland, US
+Portland, US
+Boulder, US
+Seattle, US
+Sioux Falls, US
+Fargo, US
+Seattle, US
+Santa Fe, US
+Seattle, US
+Beaverton, US
+Got set sizes -- Target : 0 |  One Hop Total : 0 | Neighbor : 0 | IXP : 0 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 154
+Creating measurement for 70.56.194.219...
+Measuring IP addresses:  67%|███████████████████████████████████████████████████████████████████████                                   | 67/100 [08:23<12:38, 22.98s/it]Got set sizes -- Target : 0 |  One Hop Total : 500 | Neighbor : 0 | IXP : 500 | PeeringFac : 0 | City Target: 0 | City IXP : 0 | City PFac : 0 | Total 500
+Creating measurement for 98.118.97.218...
+Measuring IP addresses:  68%|████████████████████████████████████████████████████████████████████████                                  | 68/100 [08:24<03:57,  7.42s/it]
+Traceback (most recent call last):
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_V2\IPMapItYourself\engine.py", line 84, in <module>
+    main()
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_V2\IPMapItYourself\engine.py", line 80, in main
+    engine.run()
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_V2\IPMapItYourself\engine.py", line 33, in run
+    self.single_radius.measure_addr(ip)
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_V2\IPMapItYourself\single_radius.py", line 342, in measure_addr
+    probes = self.initial_probe_selection(addr)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ybxYB\OneDrive\Northwestern\WINTER 2024\COMP_SCI_445\project\Group\Git\IPMAP_V2\IPMapItYourself\single_radius.py", line 112, in initial_probe_selection 
+    city_coords = self.ra_c.get_coords_by_asn(int(a_asn))
+                                              ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '{6223,6224}'

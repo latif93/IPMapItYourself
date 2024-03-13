@@ -110,6 +110,18 @@ class SingleRadius():
         
         # Step (2): Add to C the cities where AS(t) has a probe 
         city_coords = self.ra_c.get_coords_by_asn(int(a_asn))
+
+        # # hot fix for up addresses with more than one ASN, we pick the first one instead
+        # # Adjusted to handle multiple ASNs, picking the first one
+        # asn_list = a_asn.strip("{}").split(",")  # Remove curly braces and split by comma
+        # first_asn = int(asn_list[0]) if asn_list else None  # Convert the first element to int, if available
+        # if first_asn is not None:
+        #     city_coords = self.ra_c.get_coords_by_asn(first_asn)
+        # else:
+        #     # Handle the case where no valid ASN could be extracted
+        #     city_coords = []
+
+
         C_coords += city_coords 
 
         # Step (3): Add to A the ASes neighbours (BGP distance of 1) of AS(t)
