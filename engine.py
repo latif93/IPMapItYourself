@@ -66,7 +66,7 @@ def main():
     ips = []
     #map ip to location
     ip_to_loc = {}
-    with open("final_processed/final_processed_batch05.json", "r") as f:
+    with open("final_processed/final_processed_batch07.json", "r") as f:
         for line in f.readlines():
             data = json.loads(line)
             ipv4 = data.get('ip_addr')
