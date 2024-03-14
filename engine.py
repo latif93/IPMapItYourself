@@ -66,7 +66,7 @@ def main():
     ips = []
     #map ip to location
     ip_to_loc = {}
-    with open("final_processed/final_processed_batch03.json", "r") as f:
+    with open("final_processed/final_processed_batch05.json", "r") as f:
         for line in f.readlines():
             data = json.loads(line)
             ipv4 = data.get('ip_addr')
@@ -83,7 +83,7 @@ def main():
     selected_ips = ips
     print(f"Total IPs to process: {len(selected_ips)}")
     
-    engine = Engine(EngineType.RIPE, selected_ips, '5b28e74b-fd17-447f-8e97-49935b173249', validation=False, ip_to_loc=ip_to_loc)
+    engine = Engine(EngineType.RIPE, selected_ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False, ip_to_loc=ip_to_loc)
     engine.run()
 
 if __name__ == "__main__":
