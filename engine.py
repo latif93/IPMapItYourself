@@ -73,9 +73,7 @@ def main():
     selected_ips = ips
     print(f"Total IPs to process: {len(selected_ips)}")
     
-    # engine = Engine(EngineType.RIPE, selected_ips, 'b6ee5451-b96f-4434-b826-a343a611e9ee', validation=False) #bert NU acct
-    engine = Engine(EngineType.RIPE, selected_ips, 'b292958a-9285-42a5-9e9c-be667a6aa635', validation=False) #bert work acct
-    #engine = Engine(EngineType.RIPE, selected_ips, '24725bf1-7ddf-4986-a826-0eb4bedafaac', validation=False) #ali
+    engine = Engine(EngineType.RIPE, selected_ips, 'RIPE_ATLAS_API_KEY_GOES_HERE', validation=False)
 
     engine.run()
 
