@@ -83,7 +83,7 @@ def main():
     selected_ips = ips
     print(f"Total IPs to process: {len(selected_ips)}")
     
-    engine = Engine(EngineType.RIPE, selected_ips, 'b292958a-9285-42a5-9e9c-be667a6aa635', validation=False, ip_to_loc=ip_to_loc)
+    engine = Engine(EngineType.RIPE, selected_ips, 'RIPE_ATLAS_API_KEY_GOES_HERE', validation=False, ip_to_loc=ip_to_loc)
     engine.run()
 
 if __name__ == "__main__":
